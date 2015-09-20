@@ -1,0 +1,8 @@
+---
+mpd_music_directory: "/var/lib/mpd/music"
+mpd_playlist_directory: "/var/lib/mpd/playlists"
+
+mpd_user: "mpd"
+
+mpd_auto_update: "yes"
+mpd_volume_normalization: "yes"

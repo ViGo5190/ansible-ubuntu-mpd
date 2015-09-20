@@ -1,0 +1,16 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: vigo5190
+  description: Ubuntu install MPD
+  company: "Stanislav Gumeniuk"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.8
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all

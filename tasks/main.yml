@@ -1,0 +1,16 @@
+---
+- name: Install mpd Packages
+  sudo: yes
+  apt: pkg=mpd state=latest
+  notify: restart mpd
+  tags: [mpd]
+
+- name: Install mpc Packages
+  sudo: yes
+  apt: pkg=mpc state=latest
+  tags: [mpc]
+
+- name: Copy nginx configuration for selfpromo
+  template: src=mpd.conf dest=/etc/mpd.conf backup=yes owner={{mpd_user}} group="audio"
+  notify: restart mpd
+  tags: [mpd]
